@@ -9,4 +9,5 @@ const App =()=>{
     </View>
   );
 }
+//l
 export default App;
