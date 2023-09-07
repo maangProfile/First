@@ -11,8 +11,9 @@ import ListItem from '../../Components/List/ListItem';
 class Contacts extends Component {
 
   handleRowPress = (item) => {
-   return null;
+   this.props.navigation.navigate('Details',{contact:item});
   }
+  
 render(){
   return (
     
@@ -20,7 +21,9 @@ render(){
       style={{flex:1, backgroundColor: Colors.background }}
       data={contacts}
       renderItem={({ item }) =>
-       <ListItem contact={item} onPress={()=>this.handleRowPress(item)}/>}
+       <ListItem contact={item} onPress={()=>this.handleRowPress(item)}/>
+      }
+
       keyExtractor={(item) =>  item.email}
     />
   );

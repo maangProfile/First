@@ -26,6 +26,6 @@ const ListItem = ({ contact, onPress }) => {
 
         </TouchableHighlight>
     );
-};
+};``
 
 export default ListItem;
